@@ -1,31 +1,84 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<div id="home" class="header">
+    <div class="banner-info">
+        <div class="col-md-7 header-right">
+            <h1>Merhaba !</h1>
+            <h6>Bilgisayar Mühendisi</h6>
+            <ul class="address">
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+                <li>
+                    <ul class="address-text">
+                        <li><b>İsim</b></li>
+                        <li>Muhammed İkbal KARAKAYA</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="address-text">
+                        <li><b>Telefon </b></li>
+                        <li>+90 532 164 50 26</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="address-text">
+                        <li><b>ADRES </b></li>
+                        <li>Eskişehir/TÜRKİYE</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="address-text">
+                        <li><b>E-MAIL </b></li>
+                        <li><a href="mailto:muhammed.ikbal.karakaya@gmail.com"> muhammed.ikbal.karakaya@gmail.com</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="address-text">
+                        <li><b>WEBSITE </b></li>
+                        <li><a href="http://www.muhammedkarakaya.net">www.muhammedkarakaya.net</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="col-md-5 header-left">
+            <img src="@Url.Content("~/Content/MyTemplate/")images/img1.jpg" alt="">
+        </div>
+        <div class="clearfix"> </div>
+        <link href="@Url.Content("~/Content/MyTemplate/")css/owl.carousel.css" rel="stylesheet">
+        <script src="@Url.Content("~/Content/MyTemplate/")js/owl.carousel.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#owl-demo1").owlCarousel({
+                    items: 1,
+                    lazyLoad: false,
+                    autoPlay: true,
+                    navigation: false,
+                    navigationText: false,
+                    pagination: true,
+                });
+            });
+        </script>
+        <!-- Feedback -->
+        <script>
+            $(document).ready(function () {
+                $("#owl-demo3").owlCarousel({
+                    items: 1,
+                    lazyLoad: false,
+                    autoPlay: true,
+                    navigation: false,
+                    navigationText: true,
+                    pagination: true,
+                });
+            });
+        </script>
+
+    </div>
+
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+
+
+

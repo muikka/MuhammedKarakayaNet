@@ -10,12 +10,13 @@ namespace MuhammedKarakayaNet.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Title = "Ana Sayfa";
             return View();
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Title = "Hakkında.";
 
             return View();
         }
@@ -24,6 +25,11 @@ namespace MuhammedKarakayaNet.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Gallery()
+        {
             return View();
         }
     }
